@@ -83,10 +83,20 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ddkrj99k18a0lv',
+        'USER': 'pfhkuysoulmgwr',
+        'PASSWORD': '7ad2bda74a9e9d2d852c7d9dec79b1bbad45e279b4deead01da05ce19b82a075',
+        'HOST': 'ec2-35-170-21-76.compute-1.amazonaws.com',
+        'PORT':  '5432'
     }
 }
 

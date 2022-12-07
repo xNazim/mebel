@@ -92,14 +92,13 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ddkrj99k18a0lv',
-        'USER': 'pfhkuysoulmgwr',
-        'PASSWORD': '7ad2bda74a9e9d2d852c7d9dec79b1bbad45e279b4deead01da05ce19b82a075',
-        'HOST': 'ec2-35-170-21-76.compute-1.amazonaws.com',
-        'PORT':  '5432'
+        'NAME': 'mebel',
+        'USER': 'mebel',
+        'PASSWORD': 'mebel2001',
+        'HOST': 'mebel-aws.cne8e140o7sp.us-east-1.rds.amazonaws.com',
+        'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -162,6 +161,6 @@ EMAIL_HOST_PASSWORD = 'xyz' # host email password required
 EMAIL_RECEIVING_USER = ['mebel.kg@gmail.com'] # email on which you will receive messages sent from website
 
 # Configure Django App for Heroku.
-import django_on_heroku
-django_on_heroku.settings(locals())
+# import django_on_heroku
+# django_on_heroku.settings(locals())
 

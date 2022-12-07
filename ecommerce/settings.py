@@ -161,6 +161,6 @@ EMAIL_HOST_PASSWORD = 'xyz' # host email password required
 EMAIL_RECEIVING_USER = ['mebel.kg@gmail.com'] # email on which you will receive messages sent from website
 
 # Configure Django App for Heroku.
-# import django_on_heroku
-# django_on_heroku.settings(locals())
+import django_on_heroku
+django_on_heroku.settings(locals())
 
